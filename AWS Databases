@@ -36,3 +36,11 @@ the standby DB is not accessible to users and applications until the there is fa
 Read replicas
 Read replicas are the read only DBs created for scalability, decrease latency and also decrease load on primary db
 can be created in same AZ, multiple AZ and diffrent region as well
+
+
+Amazon Dynamo DB
+-----------
+Amazon Dynamo DB is a fully managed, serverless NoSQL(key - value) database
+high read and write performance at any scale
+dynamoDB table items contains partitions , sort keys and attributes
+partition key + sort key = primary key
