@@ -23,3 +23,16 @@ Analytics , Data Marts -> Data Ware house --> Amazon Redshift
 System of record, supply chain, health care, financial --> Ledger Databse --> Amazon Quantom Ledger Database (QLDB)
 
 Genarative AI --> Vector database --> Amazon OpenSearch, Amazon RDS, Amazon Aurora, Amazon DocumentDB and Amazon Neptune
+
+
+Amazon RDS features
+---------------
+Multi AZ deployment : 
+standby DB is created in multiple AZs for high availability 
+when data is written in primary db simultaneously the data is written in the stand by db
+write is complete only when it is written in both (primary and standby) dbs
+the standby DB is not accessible to users and applications until the there is failover in primary DB
+
+Read replicas
+Read replicas are the read only DBs created for scalability, decrease latency and also decrease load on primary db
+can be created in same AZ, multiple AZ and diffrent region as well
